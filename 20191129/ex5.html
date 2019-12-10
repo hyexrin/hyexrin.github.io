@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animate 1</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.js">
+    </script>
+    <style>
+    .index {
+      width: 200px;
+      height: 30px;
+      background-color: pink;
+      margin-bottom: 100px;
+    }
+      input{
+        background: yellow;
+        width: 150px;
+        height: 30px;
+        border: 1px solid red;
+      }
+      img {
+        border: 2px solid black;
+      }
+    </style>
+    <script>
+      $(document).ready(function() {
+        $('#btn').click(function() {
+          $('img').animate({ width: "600px"}, 1000);
+          $('img').animate({ height: "398px"}, 1000);
+          $('img').animate({ borderRadius: "50px"}, 1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="index">
+        <a href="index.html" target="_self">인덱스로 돌아가기</a> <br>
+    </div>
+    <img src="siro2.jpg" width="300" height="200">
+    <br> <b> 흰둥이에요</b> <br>
+    <input id="btn" value="확대하기">
+  </body>
+</html>

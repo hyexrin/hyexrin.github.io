@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-3.4.1.js">
+    </script>
+    <style>
+      .index {
+        width: 200px;
+        height: 30px;
+        background-color: pink;
+        margin-bottom: 100px;
+      }
+      .big {
+        display: none;
+        width: 350px;
+        height: 350px;
+      }
+      input {
+        width: 150px;
+        height: 30px;
+        border: 1px solid #ccc;
+        margin: 10px 15px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('#btn1').click(function(){
+          $('#btn1').slideToggle(1000);
+        });
+        $('#btn2').click(function(){
+          $('#btn2').slideToggle(1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="index">
+        <a href="index.html" target="_self">인덱스로 돌아가기</a> <br>
+    </div>
+
+    <table border="1" cellspacing=0>
+      <tr>
+        <td> <img src="cat1.jpg"> </td>
+        <td> <img src="cat2.jpg" alt=""> </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" id="btn1" value="큰 이미지로 보기/닫기">
+        </td>
+        <td>
+          <input type="button" id="btn2" value="큰 이미지로 보기/닫기">
+        </td>
+      </tr>
+      <tr>
+        <td> <img src="cat1.jpg" id="big1" class="big"> </td>
+        <td> <img src="cat2.jpg" id="big2" class="big"> </td>
+      </tr>
+    </table>
+  </body>
+</html>

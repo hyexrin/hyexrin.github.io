@@ -1,0 +1,13 @@
+article {
+  display: inline;
+  float: left;
+}
+
+
+section {
+  height: 50vh;
+}
+
+#article1, #article2, #article3 {
+  width: 25vw;
+}
