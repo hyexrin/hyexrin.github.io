@@ -1,0 +1,8 @@
+article {
+  display: inline;
+  float: left;
+}
+
+#article1, #article2, #article3 {
+  width: 15vw;
+}

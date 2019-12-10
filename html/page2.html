@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <link rel="stylesheet" href="../css/page3.css">
+        <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".close1").click(function(){
+          $(".p1").hide(1000);
+          $('.powerimg').animate({ width: "280px"}, 1000);
+        });
+      });
+      $(document).ready(function(){
+        $(".detail1").click(function(){
+          $(".p1").show(1000);
+        });
+      });
+
+      $(document).ready(function(){
+        $(".close2").click(function(){
+          $(".p2").hide(1000);
+          $('.ddleimg').animate({ width: "280px"}, 1000);
+        });
+      });
+      $(document).ready(function(){
+        $(".detail2").click(function(){
+          $(".p2").show(1000);
+        });
+      });
+
+
+      $(document).ready(function(){
+        $(".close3").click(function(){
+          $(".p3").hide(1000);
+          $('.heroimg').animate({ width: "280px"}, 1000);
+        });
+      });
+      $(document).ready(function(){
+        $(".detail3").click(function(){
+          $(".p3").show(1000);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('.powerimg').click(function() {
+          $('.powerimg').animate({ width: "350px"}, 1000);
+          $('.heroimg').animate({ width: "280px"}, 1000);
+          $('.ddleimg').animate({ width: "280px"}, 1000);
+        });
+      });
+      $(document).ready(function() {
+        $('.ddleimg').click(function() {
+          $('.powerimg').animate({ width: "280px"}, 1000);
+          $('.heroimg').animate({ width: "280px"}, 1000);
+          $('.ddleimg').animate({ width: "350px"}, 1000);
+        });
+      });
+      $(document).ready(function() {
+        $('.heroimg').click(function() {
+          $('.powerimg').animate({ width: "280px"}, 1000);
+          $('.heroimg').animate({ width: "350px"}, 1000);
+          $('.ddleimg').animate({ width: "280px"}, 1000);
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../index.html"><img src="../img/tooni.png" id="logo"></a></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="page1.html">편성표</a></li>
+        <li><a href="page2.html">프로그램</a></li>
+        <li><a href="page3.html">코난 소개</a></li>
+      </ul>
+    </nav>
+    <aside id="left">
+      <h3>카테고리</h3>
+      <ul>
+        <li> <a href="../ex1.html" target="if1">fadeIn</a> </li>
+        <li> <a href="../ex2.html" target="if1">예제</a> </li>
+        <li> <a href="../ex3.html" target="if1">slide_1</a> </li>
+        <li> <a href="../ex4.html" target="if1">slide_2</a> </li>
+        <li> <a href="../ex5.html" target="if1">animate_1</a> </li>
+        <li> <a href="../ex6.html" target="if1">animate_2</a> </li>
+        <li> <a href="../ex7.html" target="if1">animate_3</a> </li>
+      </ul>
+    </aside>
+<section>
+  <h3> 이미지를 눌러보세요</h3>
+      <article id="article1">
+        <div class="mini">
+          <img class="powerimg" src="../img/pro/power.jpg" alt="꼬마히어로 슈퍼잭">
+          <p>꼬마히어로 슈퍼잭</p>
+          <button class="detail1">자세히</button>
+          <input type="button" name="" value="닫기" class="close1">
+          <p class="p1">
+            마을을 어지럽히는 말썽꾸러기 악당 ‘레오 박사’를 물리쳐야 한다!! <br>
+            엄마가 만들어준 영양 만점 음식을 먹고 <br>슈퍼 냠냠 히어로로 변신하는 잭의 이야기가 지금 시작됩니다!
+          </p>
+        </div>
+      </article>
+
+      <article id="article2">
+        <div class="mini">
+          <img class="ddleimg" src="../img/pro/ddle.jpg" alt="잠뜰 TV">
+          <p>잠뜰TV</p>
+          <input type="button" name="" value="자세히" class="detail2">
+          <input type="button" name="" value="닫기" class="close2">
+          <p class="p2">
+            새로운 어드벤쳐 스카이블럭 세상에 여러분을 초대합니다~ <br>
+            수습 행정관 잠뜰, 상사의 부름을 받고 아주 중요한 원소 배달을 떠나는데.. <br>
+            원소를 배달하면서 벌어진 사건들!! 지금 공개됩니다~
+          </p>
+        </div>
+      </article>
+
+      <article id="article3">
+        <div class="mini">
+          <img class="heroimg" src="../img/pro/hero.jpg" alt="미니특공대 슈퍼공룡파워">
+          <p>미니특공대 슈퍼공룡파워</p>
+          <input type="button" name="" value="자세히" class="detail3">
+          <input type="button" name="" value="닫기" class="close3">
+          <p class="p3">
+            일상 속 평범한 물건들을 엉뚱한 괴물로<br> 만들어 버리는 악당에 맞서야 한다! <br>
+            악당을 물리치기 위해 슈퍼공룡파워로 업그레이드된 미니특공대가 나타났다!
+          </p>
+        </div>
+      </article>
+
+      </section>
+
+    <footer>
+      Copyright (c) 2019
+    </footer>
+  </body>
+</html>

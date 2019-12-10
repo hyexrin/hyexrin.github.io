@@ -1,0 +1,64 @@
+article {
+  display: inline;
+  float: left;
+}
+
+.mention {
+  position: absolute;
+  left: 1500px;
+  top: 600px;
+}
+
+.mention img {
+  width: 100px;
+}
+
+.mention p {
+  font-size: 13px;
+  color: orange;
+  font-weight: bold;
+}
+
+.ch1, .ch2{
+  height: 43vh;
+  background: white;
+}
+
+.cs {
+  z-index: -999;
+  position: absolute;
+  left: 1000px;
+  width: 300px;
+}
+
+.ms {
+  z-index: -999;
+  position: absolute;
+  left: 1000px;
+  width: 340px;
+}
+span {
+  font-size: 20px;
+  color: navy;
+  font-weight: bold;
+}
+
+.box1 p {
+  display: inline;
+  font-size: 15px;
+
+}
+
+.box1 {
+  width: 40vw;
+    float: left;
+  }
+
+.A1 {
+  float: left;
+  display: inline;
+}
+
+#left {
+  height: 400vh;
+}
